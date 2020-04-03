@@ -1,4 +1,4 @@
-So lets see what happens in the code above.
+So lets see what happens in the code above (server.js).
 
 1. The [http module](https://www.w3schools.com/nodejs/obj_http_server.asp) is loaded with the require() function. http returns a reference which is saved as a return value in the variable http. Various functions can be used on the http reference that are provided by the http module.
 2. On the http reference a server is created with the [http.createServer() ](https://www.w3schools.com/nodejs/met_http_createserver.asp) function. http.createServer() creates a server object and the reference is saved in the variable server. The server object can listen to ports and receives a [requestListener()](https://www.w3schools.com/nodejs/func_http_requestlistener.asp) function as parameter. This function is always executed when the server receives a request from the client. The function processes the client`s requests and returns a response to the client and expects 2 parameters such as request and response. These parameters can be named arbitrarily and are usually noted with *req* and *res*.
