@@ -1,13 +1,22 @@
-So lets see what happens in the code above (server.js).
+###Requirements
 
-1. The [http module](https://www.w3schools.com/nodejs/obj_http_server.asp) is loaded with the require() function. http returns a reference which is saved as a return value in the variable http. Various functions can be used on the http reference that are provided by the http module.
-2. On the http reference a server is created with the [http.createServer() ](https://www.w3schools.com/nodejs/met_http_createserver.asp) function. http.createServer() creates a server object and the reference is saved in the variable server. The server object can listen to ports and receives a [requestListener()](https://www.w3schools.com/nodejs/func_http_requestlistener.asp) function as parameter. This function is always executed when the server receives a request from the client. The function processes the client`s requests and returns a response to the client and expects 2 parameters such as request and response. These parameters can be named arbitrarily and are usually noted with *req* and *res*.
-	- **req**: request is always the first parameter and represent the 	request object. The request object refer to the [IncomingMessage](https://www.w3schools.com/nodejs/obj_http_incomingmessage.asp) object. This object has properies and methods among other things, the property *url* that can be addressed with *req.url*.
-	- **res**: response is always the second parameter and represent the response object. The response object refer to the [ServerResponse](https://www.w3schools.com/nodejs/obj_http_serverresponse.asp) object. This object has properties and methods among other things, the method *writeHead()* that can be addressed with *res.writeHead()*.
-3.  With *if* we ask in the program code whether the value for *req.url* corresponds to a specific URL. For example, if the URL corresponds to */about*, the server should return an about page to the client, which then e.g. is displayed in the browser. If the URL does not match any of the conditions specified with *if* and *else if*, the *else* condition becomes true and an error message is sent back to the client.
-4. Whenever a *if* or *else if* condition become true, the server respond with 3 *res* methods
-	- **res.writeHead()**: the function *writeHead()* sends the http-status code 200 (Ok) as the standard response for successful HTTP requests and the *response header* back to the client. The response header is an object with the key *content-type* and the value *text/html* as here in the example. Only in case no condition match and the *else* condition become true the function *writeHead()* sends the http-status code 404 (Not Found).
-	- **res.write()**: The function *write()* sends a text stream back to the client. In our example *write()* send HTML that can be parsed by the browser to display a website content.	
- 	- **res.end()**: the *end()* function tells the server that the request has ended.
-5.   At the end of the program, the *listen()* function is used on the server, which expects the port as the parameter. The port in this example is port 3000. *listen()* starts the server on port 3000 at the localhost. The final statement log a message at the console that the server has been started. 
+1. Install node.js and npm.
+You can read how to install node and npm on Mac OS on [Digitaldocblog](https://digitaldocblog.com/singleblog?article=1). Other ways to install node.js can be found on [nodejs.org](https://nodejs.org/en/download/).
+2. git should be installed. A very good tutorial can be found here on [Medium](https://medium.com/@george.seif94/a-full-tutorial-on-how-to-use-github-88466bac7d42).
+
+###Install and run
+Clone the repository.
+
+```
+#> git init
+
+#> git clone https://github.com/prottlaender/node-part-1-simple-node-webserver-V1.git
+
+#> cd node-part-1-simple-node-webserver-V1
+
+#> node server.js
+
+```
+
+
 
