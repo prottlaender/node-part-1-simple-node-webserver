@@ -7,15 +7,15 @@ You can read how to install node and npm on Mac OS on [Digitaldocblog](https://d
 
 2. Install and run
 
-Clone the repository.
+  Clone the repository.
 
-```
-#> git init
+  ```
+  #> git init
 
-#> git clone https://github.com/prottlaender/node-part-1-simple-node-webserver-V1.git
+  #> git clone https://github.com/prottlaender/node-part-1-simple-node-webserver-V1.git
 
-#> cd node-part-1-simple-node-webserver-V1
+  #> cd node-part-1-simple-node-webserver-V1
 
-#> node server.js
+  #> node server.js
 
-```
+  ```
