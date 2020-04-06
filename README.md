@@ -1,10 +1,11 @@
-Requirements
+1. Requirements
 
-1. Install node.js and npm.
+- Install node.js and npm.
 You can read how to install node and npm on Mac OS on [Digitaldocblog](https://digitaldocblog.com/singleblog?article=1). Other ways to install node.js can be found on [nodejs.org](https://nodejs.org/en/download/).
-2. git should be installed. A very good tutorial can be found here on [Medium](https://medium.com/@george.seif94/a-full-tutorial-on-how-to-use-github-88466bac7d42).
 
-Install and run
+- git should be installed. A very good tutorial can be found here on [Medium](https://medium.com/@george.seif94/a-full-tutorial-on-how-to-use-github-88466bac7d42).
+
+2. Install and run
 
 Clone the repository.
 
