@@ -9,3 +9,6 @@ You can read how to install node and npm on Mac OS on [Digitaldocblog](https://d
 - #> git clone https://github.com/prottlaender/node-part-1-simple-node-webserver-V1.git
 - #> cd node-part-1-simple-node-webserver-V1
 - #> node server.js
+
+**3. Documentation**
+- Documentation and explanation of the code on [Digitaldocblog](https://digitaldocblog.com/singleblog?article=5).
